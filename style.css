@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+body {
+  background: #e5e5e5;
+}
+main {
+  justify-content: center;
+  margin-top: 150px;
+}
+main h4 {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 1.3rem 0;
+}
+main .wrapper {
+  width: 730px;
+  height: 268px;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+.dateWrapper {
+  justify-content: space-between;
+}
+.dateWrapper label {
+  font-size: 14px;
+}
+.dateWrapper input {
+  width: 220px;
+  height: 35px;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #d4d6db;
+  outline: none;
+  padding: 0.5rem;
+}
+.dateWrapper span {
+  color: red;
+}
+button {
+  margin: 1rem 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 14px;
+  background: #1a73e8;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+}
+.timerBar {
+  width: 100%;
+  background: #98f9ff;
+  height: 36px;
+}
+.timeSlot {
+  width: 74px;
+  height: 100%;
+  justify-content: center;
+}
+.timeSlot span {
+  font-size: 12px;
+}
+.indicator {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.indicator div {
+  margin: 0 0.5rem;
+}
+.indicator .indicate {
+  width: 15px;
+  height: 12px;
+}
+.indicator span {
+  font-size: 13px;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 10px;
+  }
+  main .wrapper {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .dateWrapper {
+    flex-direction: column;
+  }
+  .dateWrapper input {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dateWrapper input {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  .dateWrapper input {
+    width: 250px;
+  }
+  .timeSlot {
+    width: 55px;
+  }
+  .timeSlot span {
+    font-size: 11px;
+  }
+}
