@@ -1,5 +1,9 @@
 
+
+
 let findBtn = document.getElementById('findBtn');
+
+// fetching the data from json
 
 let data = fetch('data.js');
 
